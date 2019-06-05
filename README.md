@@ -26,6 +26,8 @@ cd src
 python main.py
 ```
 
+Please note that given the Github Api [limitations](https://developer.github.com/v4/guides/resource-limitations/), sometime the program will return an error message with code 502. This is because the query took for some reason too much time and has been interrupted.
+
 ## Features
 We use the following to compute the health score
 * Star number
