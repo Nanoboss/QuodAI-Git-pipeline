@@ -1,6 +1,11 @@
 import requests
+import sys
 
-headers = {"Authorization": "token " + "39d8fdd3ad90ee120250354da8769ba7ac104880"}
+headers = {"Authorization": "token " + "YOUR_TOKEN"}
+
+if headers == {"Authorization": "token " + "YOUR_TOKEN"}:
+    print("Replace YOUR_TOKEN by a valid token")
+    sys.exit(0)
 
 
 def run_query_with_var(query, variables):

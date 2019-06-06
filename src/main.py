@@ -8,7 +8,7 @@ runs = 20
 
 
 def main():
-    os.system("rm output.csv ; touch ranking.csv")
+    os.system("rm ranking.csv output.csv ; touch ranking.csv")
     cursor = None
     print("Retrieving repos from gitHub DB...")
     for i in range(runs):
@@ -27,7 +27,6 @@ def main():
     scores = parser.score("ranking.csv", max_values)
     parser.update_csv_score("ranking.csv", scores)
 
-    os.system("rm ranking.csv")
     print("Done.")
 
 
