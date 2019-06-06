@@ -23,7 +23,7 @@ To run the program, open a terminal and enter the commands:
 ```
 pip install -r requirements.txt
 cd src
-python main.py
+python3 main.py
 ```
 
 Please note that given the Github Api [limitations](https://developer.github.com/v4/guides/resource-limitations/), sometime the program will return an error message with code 502. This is because the query took for some reason too much time and has been interrupted.
